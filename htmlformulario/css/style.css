@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+
+html{
+    scroll-behavior:smooth;
+}
+body{
+    background-color: rgb(210, 219, 219);
+    text-align: center;
+    margin: 25px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h1{
+    font-size: 100px;    
+    font-family: 'Poppins', sans-serif;
+    color:rgb(213, 35, 76);
+} 
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    color:rgb(36, 0, 61);
+    position:inherit;
+    margin: 20px;
+    list-style-type: none;
+}
+li{
+    text-align: right;
+}
+a:link{
+    color:rgb(36, 0, 61);
+    text-decoration: none;
+}
+a:visited{
+    color:rgb(132, 0, 110);
+    text-decoration: none;
+}
+a:hover{
+    color:rgb(17, 159, 195);
+    text-decoration: none;
+}
+#banner{
+
+    display: flex;
+    flex-direction: row-reverse;
+    background: linear-gradient(90deg,transparent,rgb(36, 0, 61)),url("/img/banner.jpg");
+    border-radius: 20px;
+    height: 400px;
+    background-size:cover;
+    background-position: center;
+    padding: 50px;
+    margin: 20px;
+    margin-bottom: 50px;
+}
+.bannertext{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 650px;
+    border-radius: 20px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    transition: ease-in-out 1.0s;
+    transition-delay: 0.5s;
+}
+.card:hover{
+    
+    width:495px;
+    height:715px; 
+    box-shadow: 5px 5px 10px 2px rgb(124, 124, 141);
+    transition: ease-in-out 0.2s;
+    transition-delay: 0.6s;
+}
+.card__background{
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+}
+.card__description{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.card__button{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: inherit;
+    text-align:center; 
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgb(255, 255, 255);
+    margin: 40px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+text{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    position:inherit;
+    text-align:left; 
+    margin: 20px;
+}
+
+text.card__title{
+    text-align: center;
+    font-size: 25px;
+}
+#isaac .card__background{
+    background-image: url("/img/isaac.webp");
+}
+#spire .card__background{
+    background-image: url("/img/slaythespire.jpg");
+}
+#hades .card__background{
+    background-image: url("/img/hades.jpg");
+}
+#eden .card__background{
+    background-image: url("/img/eden.jpg");
+}
+#isaac .card{
+    background-color: rgb(135, 68, 55);
+}
+#spire .card{
+    background-color:rgb(15, 107, 117);
+}
+#hades .card{
+    background-color:rgb(12, 174, 125);
+}
+#eden .card{
+    background-color:rgb(212, 81, 131);
+}
+.form{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    margin: 20px;
+}
+.persondata{
+    display: flex;
+    flex-direction: column;    
+    flex-grow: 0.5;
+    align-self: flex-start;
+}
+label{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(213, 35, 76);
+    text-align:left; 
+    margin: 20px;
+}
+input{
+    border: none;
+    padding: 10px;
+    border-bottom: 3px solid rgb(213, 35, 76);
+    border-radius: 20px;
+    color: rgb(36, 0, 61);
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+input:focus{
+    transition: ease-in-out;
+    transition-duration: 0.4s;
+    background-color: rgb(213, 35, 76);
+    color: white;
+    box-shadow: 5px 5px 10px 2px rgb(124, 124, 141);;
+}
+input[type=submit]{
+    flex-grow: 0.5;
+    align-self: flex-end;
+    margin: 10px;
+}
+div.return{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color:rgb(36, 0, 61);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    text-align:left; 
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    text-decoration: none;
+}
+i{
+    color: inherit;
+}
+
